@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+ <meta charset="utf-8">
+ <title>Барбершоп</title>
+ <link rel="stylesheet" href="./css/style.css">   
+</head>
+<body>
+    <header class="main-container">
+        <div class="container">
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="#">Інформація</a></li>
+                    <li><a href="#">Новини</a></li>
+                    <li><a href="#">Прайс-лист</a></li>
+                    <li><a href="#">Магазин</a></li>
+                    <li><a href="#">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user-block">
+            <a href="#">Вхід</a>
+        </div>
+    </header>
+    <main class="container">
+        <div class="logo">
+            <img src="logo.png" width="320" height="240" alt="Барбершоп">
+        </div>
+        <div class="features">
+            <div class="features-item">
+                <b>Швидко</b>
+                <p>Ми робимо свою роботу швидко! Дві години промайнуть непомітно і ви - щасливий власник стильної зачіски!</p>
+            </div>
+            <div class="features-item">
+                <b>Круто</b>
+                <p>Забудьте, як ви стриглися раніше. Ми зробимо з вас зірку футболу або кіно! Принаймні зовнішньо</p>
+            </div>
+            <div class="features-item">
+                <b>Дорого</b>
+                <p>Наші майстри - професіонали своєї справи і не можуть коштувати дешево. До того ж, хіба ціна не відповідає статусу?</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h2 class="content-title">Новини</h2>
+                    <ul>
+                        <li>
+                            <p>Нам нарешті завезли Ягермейстер!</p>
+                            <time datetime="2020-12-12">12 грудня</time>
+                        </li>
+                        <li>
+                            <p>У нашій команді поповнення</p>
+                            <time datetime="2020-12-10">10 грудня</time>
+                        </li>
+                    </ul>
+                <a href="#">Усі новини</a>
+            </div>
+            <div class="content-right">
+                <h2 class="content-title">Фотогалерея</h2>
+                    <figure>
+                        <img src="photo1.jpg" width="286" height="164" alt="">
+                    </figure>
+                        <button class="btn-previous">Назад</button>
+                        <button class="btn-next">Вперед</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-left">
+                <h2 class="content-title">Контактна інформація</h2>
+                <p>
+                    Барбершоп<br>
+                    Адреса: м. Львів, Площа Галицька, 19<br>
+                    Телефон: +3806723223
+                </p>
+                <p> 
+                    Час роботи:<br>
+                    пн - пт: 10:00 - 23:00<br>
+                    сб - нд: 10:00 - 19:00
+                </p>
+                <a class="btn" href="#">Як дістатися</a>
+                <a class="btn" href="#">Зворотній зв'язок</a>
+            </div>
+            <div class="content-right">
+                <h2 class="content-title">Записатися</h2>
+                    <p>Вкажіть бажану дату і час, аби ми зв'язалися з вами для підтвердження бронювання</p>
+                    <form>
+                        <label for="date">Дата:</label><br>
+                        <input type="text" id="date" name="data"><br>
+                        <label for="time">Час:</label><br>
+                        <input type="text" id="time" name="time"><br>
+                        <label for="yname">Ваше ім'я:</label><br>
+                        <input type="text" id="yname" name="yname"><br>
+                        <label for="telephone">Телефон:</label><br>
+                        <input type="tel" id="telephone" name="telephone"> 
+                    </form>
+                    <button class="btn" type="submit">Відправити</button>
+            </div>
+        </div>
+    </main>
+    <footer class="container">
+        <div class="contact">
+            <p>
+                Барбершоп<br>
+                Адреса: м. Львів, Площа Галицька, 19<br>
+                <a href="#">Як нас відшукати</a><br>
+                Телефон: +3806723223
+            </p>
+        </div>
+        <div class="social-media">
+            <a class="btn-social-media btn-social-media-vk" href="#">Вконтакті</a>
+            <a class="btn-social-media btn-social-media-fb" href="#">Фейсбук</a>
+            <a class="btn-social-media btn-social-media-insta" href="#">Інстаграм</a>
+        </div>
+        <div class="developers">
+            <p>Розроблено:</p>
+            <a class="btn" href="#">SS Academy</a>
+        </div>
+    </footer>
+</body>
+</html>
