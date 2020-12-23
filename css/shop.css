@@ -1,0 +1,137 @@
+body {
+    min-height: 1200px;
+    min-width: 1122px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../img/Layer\ 24\ copy.png);
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10;
+}
+
+.header-container-layout {
+    display: flex;
+}
+
+.header-container-layout::before {
+    display: none;
+}
+
+.logo {
+    min-height: 75px;
+    width: 150px;
+    padding-top: 25px;
+}
+
+.main-navigation {
+    min-height: 75px;
+    width: 650px;
+}
+
+.user-block {
+    min-height: 75px;
+    width: 140px;
+}
+
+.main-container {
+    margin-bottom: 60px;
+}
+
+.main-title {
+    width: 300px;
+    min-height: 65px;    
+}
+
+.both-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content-left {
+    width: 190px;
+    min-height: 570px;
+}
+
+.content-right {
+    width: 700px;
+    min-height: 590px;
+}
+
+.product-items {
+min-height: 570px;
+}
+
+.product-1 {
+    width: 220px;
+    min-height: 290px;
+}
+
+.product-2 {
+    width: 220px;
+    min-height: 290px;
+}
+
+.product-3 {
+    width: 220px;
+    min-height: 290px;
+}
+
+.product-4 {
+    width: 220px;
+    min-height: 290px;
+}
+
+.product-5 {
+    width: 220px;
+    min-height: 290px;
+}
+
+.product-6 {
+    width: 220px;
+    min-height: 290px;
+}
+
+.page-numbers {
+      margin-top: 45px;
+      margin-bottom: 50px;
+  }
+
+.main-footer-layout {
+    margin-top: 65px;
+    padding-top: 66px;
+    padding-bottom: 45px;
+}
+
+.main-footer-layout {
+    display: flex;
+ }
+
+  .main-footer-layout::before {
+    display: none;
+  }
+
+  .contact {
+    min-height: 90px;
+    width: 320px;
+    margin-right: 60px;
+  }
+  
+  .social-media {
+    min-height: 90px;
+    width: 180px;
+  }
+  
+  .developers {
+    min-height: 90px;
+    width: 160px;
+    margin-left: auto;
+  }
+
+  

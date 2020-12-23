@@ -1,0 +1,124 @@
+body {
+    min-height: 1170px;
+    min-width: 1122px;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(../img/Layer\ 24\ copy.png);
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10;
+}
+
+.main-header {
+    margin-bottom: 60px;
+  }
+
+.main-header-layout {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header-layout::before {
+    display: none;
+}
+
+.logo {
+    min-height: 75px;
+    width: 150px;
+    padding-top: 25px;
+}
+
+.main-navigation {
+    min-height: 75px;
+    width: 650px;
+}
+
+.user-block {
+    min-height: 75px;
+    width: 140px;
+}
+
+.main-title-price {
+    width: 170px;
+    min-height: 70px;
+}
+
+.about-us-title {
+    margin-top: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 75px;
+}
+
+.content-main {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content-main::before {
+    display: none;
+}
+
+
+.about-our-feature {
+    min-height: 215px;
+    width: 240px;
+    margin-bottom: 75px;
+}
+
+.about-us-info {
+    width: 390px;
+    min-height: 190px;
+    margin-bottom: 85px;
+}
+
+.price {
+    min-height: 215px;
+    width: 460px;
+}
+
+.price-title {
+    margin-bottom: 125px;
+}
+
+table  {
+    border: 2px solid black;
+}
+
+.main-footer-layout {
+    margin-top: 65px;
+    padding-top: 66px;
+    padding-bottom: 45px;
+  }
+
+  .main-footer-layout {
+    display: flex;
+ }
+
+  .main-footer-layout::before {
+    display: none;
+  }
+
+  .contact {
+    min-height: 90px;
+    width: 320px;
+    margin-right: 60px;
+  }
+  
+  .social-media {
+    min-height: 90px;
+    width: 180px;
+  }
+  
+  .developers {
+    min-height: 90px;
+    width: 160px;
+    margin-left: auto;
+  }

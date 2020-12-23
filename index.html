@@ -3,11 +3,11 @@
 <head>
  <meta charset="utf-8">
  <title>Барбершоп</title>
- <link rel="stylesheet" href="./css/style.css">   
+ <link rel="stylesheet" href="./css/style-index.css">   
 </head>
 <body>
-    <header class="main-container">
-        <div class="container">
+    <header class="main-header">
+        <div class="main-header-layout container">
             <nav class="main-navigation">
                 <ul>
                     <li><a href="#">Інформація</a></li>
@@ -17,14 +17,14 @@
                     <li><a href="#">Контакти</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="user-block">
+            <div class="user-block">
             <a href="#">Вхід</a>
-        </div>
+            </div>
+        </div>    
     </header>
     <main class="container">
         <div class="logo">
-            <img src="logo.png" width="320" height="240" alt="Барбершоп">
+            <img src="./img/BORODINSKI Logo.png" alt="Барбершоп">
         </div>
         <div class="features">
             <div class="features-item">
@@ -83,21 +83,16 @@
             <div class="content-right">
                 <h2 class="content-title">Записатися</h2>
                     <p>Вкажіть бажану дату і час, аби ми зв'язалися з вами для підтвердження бронювання</p>
-                    <form>
-                        <label for="date">Дата:</label><br>
-                        <input type="text" id="date" name="data"><br>
-                        <label for="time">Час:</label><br>
-                        <input type="text" id="time" name="time"><br>
-                        <label for="yname">Ваше ім'я:</label><br>
-                        <input type="text" id="yname" name="yname"><br>
-                        <label for="telephone">Телефон:</label><br>
-                        <input type="tel" id="telephone" name="telephone"> 
+                    <form class="appointment-form" action="#" method="post">                    <input type="text" name="date" value="" placeholder="Дата">
+                     <input type="text" name="time" value="" placeholder="Час">
+                     <input type="text" name="name" value="" placeholder="Ваше ім'я">
+                     <input type="tel" name="number" value="" placeholder="Телефон"> 
                     </form>
                     <button class="btn" type="submit">Відправити</button>
             </div>
         </div>
     </main>
-    <footer class="container">
+    <footer class="main-footer-layout container">
         <div class="contact">
             <p>
                 Барбершоп<br>
@@ -107,6 +102,7 @@
             </p>
         </div>
         <div class="social-media">
+            <p>Дружити:</p>
             <a class="btn-social-media btn-social-media-vk" href="#">Вконтакті</a>
             <a class="btn-social-media btn-social-media-fb" href="#">Фейсбук</a>
             <a class="btn-social-media btn-social-media-insta" href="#">Інстаграм</a>
