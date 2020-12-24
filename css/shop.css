@@ -54,14 +54,29 @@ body {
     justify-content: space-between;
 }
 
+.both-side::before {
+    display: none;
+}
+
+
 .content-left {
     width: 190px;
-    min-height: 570px;
+    min-height: 575px;
 }
 
 .content-right {
     width: 700px;
     min-height: 590px;
+}
+
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-items::before {
+    display: none;
 }
 
 .product-items {

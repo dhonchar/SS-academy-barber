@@ -88,11 +88,22 @@ body {
     margin-bottom: 125px;
 }
 
-table  {
-    border: 2px solid black;
+.price-content {
+margin-bottom: 43px;
 }
 
-.main-footer-layout {
+.table-style  {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 2px solid black;
+    width: 460px;
+    height: 41px;
+}
+
+.main-footer-container {
     margin-top: 65px;
     padding-top: 66px;
     padding-bottom: 45px;
