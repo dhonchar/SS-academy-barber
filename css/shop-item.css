@@ -1,12 +1,15 @@
 body {
-    min-height: 1200px;
-    min-width: 1122px;
     padding: 0;
     margin: 0;
-}
 
-body {
-    background: url(../img/Layer\ 24\ copy.png);
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-image: url(../img/Layer\ 24\ copy.png);
 }
 
 .container {
@@ -15,7 +18,113 @@ body {
     padding: 0 10;
 }
 
-.main-container {
+a {
+    text-decoration: none;
+}
+
+.main-header {
+    min-height: 70px;
+    margin-bottom: 50px;
+    background-color: #000000;
+
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff
+}
+
+.main-navigation .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    margin: 0;
+    padding: 0;
+
+    width: 150px;
+    min-height: 70px;
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+
+    width: 720px;
+    min-height: 70px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-navigation {
+    display: flex;
+
+    max-width: 140px;
+    min-height: 70px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+    display: block;
+    padding: 25px 20px;
+
+    color: #ffffff;
+}
+
+.main-header-logo a {
+    padding: 22px
+}
+
+.main-header-logo a:hover,
+.main-header-logo a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #242424;
+}
+
+.user-navigation .login-link {
+    position: relative;
+
+    padding-left: 50px;
+}
+
+.login-link::before {
+    content: "";
+
+    position: absolute;
+
+    top: 28px;
+    left: 20px;
+
+    width: 17px;
+    height: 18px;
+
+    background-image: url(../img/icon-login.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before {
+    opacity: 1;
+}
+
+/* .main-container {
     margin-bottom: 60px;
 }
 
@@ -169,4 +278,4 @@ body {
     min-height: 90px;
     width: 160px;
     margin-left: auto;
-  }
+  } */

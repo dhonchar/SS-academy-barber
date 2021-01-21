@@ -1,116 +1,189 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
- <meta charset="utf-8">
- <title>Барбершоп</title>
- <link rel="stylesheet" href="./css/style-index.css">   
+    <meta charset="UTF-8">
+    <title>Барбершоп</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style-index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
     <header class="main-header">
-        <div class="main-header-layout container">
-            <nav class="main-navigation">
-                <ul>
-                    <li><a href="#">Інформація</a></li>
-                    <li><a href="#">Новини</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="shop.html">Магазин</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </nav>
-            <div class="user-block">
-            <a href="#">Вхід</a>
-            </div>
-        </div>    
-    </header>
-    <main class="container">
-        <div class="logo">
-            <img src="./img/BORODINSKI Logo.png" alt="Барбершоп">
-        </div>
-        <div class="features">
-            <div class="features-item">
-                <b>Швидко</b>
-                <p>Ми робимо свою роботу швидко! Дві години промайнуть непомітно і ви - щасливий власник стильної зачіски!</p>
-            </div>
-            <div class="features-item">
-                <b>Круто</b>
-                <p>Забудьте, як ви стриглися раніше. Ми зробимо з вас зірку футболу або кіно! Принаймні зовнішньо</p>
-            </div>
-            <div class="features-item">
-                <b>Дорого</b>
-                <p>Наші майстри - професіонали своєї справи і не можуть коштувати дешево. До того ж, хіба ціна не відповідає статусу?</p>
-            </div>
-        </div>
-        <div class="content">
-            <div class="content-left">
-                <h2 class="content-title">Новини</h2>
-                    <ul>
+        <nav class="main-navigation">
+            <a class="main-header-logo" href="index.html">
+                <img src="../SS-academy-barber/img/BORODINSKI Logo.png" alt="Логотип">
+            </a>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="site-navigation">
+                        <li><a href="#">Інформація</a></li>
+                        <li><a href="#">Новини</a></li>
+                        <li><a href="./price.html">Прайс-лист</a></li>
+                        <li><a href="./shop.html">Магазин</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <ul class="user-navigation">
                         <li>
+                            <a class="login-link" href="#">Вхід</a> 
+                        </li>
+                    </ul>
+                </div>    
+            </div>    
+        </nav>
+    </header>
+
+    <main class="container">
+       <div class="features">
+           <ul class="feature-list">
+               <li class="feature-item">
+                <h3>Швидко</h3>
+                <p>Ми робимо свою роботу швидко! Дві години промайнуть непомітно і ви - щасливий власник стильної зачіски!</p>
+               </li>
+               <li class="feature-item">
+                <h3>Круто</h3>
+                <p>Забудьте, як ви стриглися раніше. Ми зробимо з вас зірку футболу або кіно! Принаймні зовнішньо</p>
+               </li>
+               <li class="feature-item">
+                <h3>Дорого</h3>
+                <p>Наші майстри - професіонали своєї справи і не можуть коштувати дешево. До того ж, хіба ціна не відповідає статусу?</p>
+               </li>
+           </ul>
+       </div>
+
+       <div class="index-columns">
+            <div class="news">
+                <h2>Новини</h2>
+                    <ul class="news-list">
+                        <li class="news-item">
                             <p>Нам нарешті завезли Ягермейстер!</p>
                             <time datetime="2020-12-12">12 грудня</time>
                         </li>
-                        <li>
+                        <li class="news-item">
                             <p>У нашій команді поповнення</p>
                             <time datetime="2020-12-10">10 грудня</time>
                         </li>
                     </ul>
-                <a href="#">Усі новини</a>
+                    <a class="button" href="#">Усі новини</a>
             </div>
-            <div class="content-right">
-                <h2 class="content-title">Фотогалерея</h2>
-                    <figure>
-                        <img src="photo1.jpg" width="286" height="164" alt="">
-                    </figure>
-                        <button class="btn-previous">Назад</button>
-                        <button class="btn-next">Вперед</button>
+
+            <div class="gallery">
+                <h2>Фотогалерея</h2>
+                    <div class="gallery-container">
+                        <figure class="gallery-content">
+                            <a href="#"><img src="../SS-academy-barber/img/Layer 21.png" alt="Інтер'єр"></a>
+                        </figure>
+                        <button class="button gallery-button gallery-button-back" type="button" disabled>Назад</button>
+                        <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
+                    </div>    
             </div>
-        </div>
-        <div class="content">
-            <div class="content-left">
-                <h2 class="content-title">Контактна інформація</h2>
+        </div> 
+
+        <div class="index-columns">
+            <div class="contacts">
+                <h2>Контактна інформація</h2>
                 <p>
                     Барбершоп<br>
                     Адреса: м. Львів, Площа Галицька, 19<br>
                     Телефон: +3806723223
-                </p>
-                <p> 
+                    </p>
+                    <p> 
                     Час роботи:<br>
                     пн - пт: 10:00 - 23:00<br>
                     сб - нд: 10:00 - 19:00
-                </p>
-                <a class="btn" href="#">Як дістатися</a>
-                <a class="btn" href="#">Зворотній зв'язок</a>
+                    </p>
+                    <a class="button" href="#">Як дістатися</a>
+                    <a class="button" href="#">Зворотній зв'язок</a>
             </div>
-            <div class="content-right">
-                <h2 class="content-title">Записатися</h2>
-                    <p>Вкажіть бажану дату і час, аби ми зв'язалися з вами для підтвердження бронювання</p>
-                    <form class="appointment-form" action="#" method="post">                    <input type="text" name="date" value="" placeholder="Дата">
-                     <input type="text" name="time" value="" placeholder="Час">
-                     <input type="text" name="name" value="" placeholder="Ваше ім'я">
-                     <input type="tel" name="number" value="" placeholder="Телефон"> 
-                    </form>
-                    <button class="btn" type="submit">Відправити</button>
+
+            <div class="appointment">
+                <h2>Записатися</h2>
+                <p class="appointment-info">Вкажіть бажану дату і час, аби ми зв'язалися з вами для підтвердження бронювання</p>
+                <form class="appointment-form" action="#" method="post">
+                    <p class="appointment-item">
+                    <label for="appointment-date">Дата</label> 
+                    <input id="appointment-date" type="text" name="date" value="" placeholder="29.12.2020">
+                    </p>
+                    <p class="appointment-item">
+                    <label for="appointment-time">Час</label> 
+                    <input id="appointment-time" type="text" name="time" value="" placeholder="9:00">
+                    </p>
+                    <p class="appointment-item">
+                    <label for="appointmen-text">Ваше ім'я</label>
+                    <input id="appointmen-text" type="text" name="name" value="" placeholder="Борода">
+                    </p>
+                    <p class="appointment-item">
+                    <label for="appointment-phone">Телефон</label>
+                    <input id="appointment-phone" type="tel" name="phone" value="" placeholder="+380672322321">
+                    </p>
+                    <button class="button" type="submit">Відправити</button>
+                </form>
             </div>
-        </div>
+        </div>   
     </main>
-    <footer class="main-footer-layout container">
-        <div class="contact">
-            <p>
+    
+    <footer class="main-footer">
+        <div class="container">
+            <p class="footer-contacts">
                 Барбершоп<br>
                 Адреса: м. Львів, Площа Галицька, 19<br>
                 <a href="#">Як нас відшукати</a><br>
-                Телефон: +3806723223
+                Телефон: +380672322321
             </p>
-        </div>
-        <div class="social-media">
-            <p>Дружити:</p>
-            <a class="btn-social-media btn-social-media-vk" href="#">Вконтакті</a>
-            <a class="btn-social-media btn-social-media-fb" href="#">Фейсбук</a>
-            <a class="btn-social-media btn-social-media-insta" href="#">Інстаграм</a>
-        </div>
-        <div class="developers">
-            <p>Розроблено:</p>
-            <a class="btn" href="#">SS Academy</a>
-        </div>
+            <div class="footer-social">
+                <b>Дружити:</b>
+                <ul>
+                    <li><a class="social-button" href="#" aria-label="Фейсбук">
+                        <svg class="social-icon" width="21px" height="21px" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.15 21.74" width="100%" height="100%"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"></path></svg>  
+                    </a>
+                    </li>
+                    <li><a class="social-button" href="#" aria-label="Інстаграм">
+                        <svg class="social-icon" viewBox="0 0 20 20" width="21px" height="21px" id="instagram"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"></path></svg>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                <b>Розроблено:</b>
+                <a class="button" href="#">SS Academy</a>
+            </p>
+        </div>   
     </footer>
+
+    <div class="modal modal-login">
+        <h2>Особистий кабінет</h2>
+        <p>Введіть свій логін і пароль</p>
+        <form class="login-form" action="#" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login">Логін</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логін">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль"> 
+            </p>
+
+            <p class="login-password-info">
+                <label class="login-checkbox">
+            <input type="checkbox" name="remember" class="visually-hidden">
+            <span class="checkbox-indicator"></span>
+            Запам'ятати мене
+            </label> 
+            <a class="restore" href="#">Я забув пароль!</a>
+            </p>
+            <button class="button" type="submit">Увійти</button>
+        </form>
+        <button class="modal-close" type="button">Закрити</button>
+    </div>
+
+    <div class="modal modal-map">
+        <h2 class="visually-hidden">Як нас відшукати</h2>
+        <p>
+            <img src="../SS-academy-barber/img/Слой 2.png" alt="Адреса Барбершопу">
+        </p>
+        <button class="modal-close" type="button">Закрити</button>
+    </div>
+
 </body>
 </html>

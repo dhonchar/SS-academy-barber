@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="16" viewBox="0 0 18 16">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <image id="_.icon-login" data-name=".icon-login" class="cls-1" width="18" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAQCAYAAAAbBi9cAAAAyUlEQVQ4ja2UMQ7CMAxFH4h2YClLF27AwsJCF64PS2duwNKlHWDJUGTJlqIooa7EX6Ik1su3a3czzzNONUAdhY5AsM2uwNgDZ+AJTHp2y8QNQC/AkqMWuOqLd4W1mcdO6uxRcmSqgE5hQyFGnFdbR3kM1mTuProexNFFg2PVyT52NpGRgI4OV4swT2o5WJrBalBRa0HWDiG9kBq9CsVOv1JYKnafObeGdEFwpvYLIt0tGpc62zMi0vGhBHprQDy0caomG1r+8xsBvq/TN3akseYdAAAAAElFTkSuQmCC"/>
+</svg>

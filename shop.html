@@ -3,197 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <title>Магазин</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/shop.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+
     <header class="main-header">
-        <div class="header-container-layout container">
-            <div class="logo">
-                <a class="btn-logo" href="index.html">
-                    <img src=".//img/Logo.png">
-                </a>
-            </div>
-            <nav class="main-navigation">
-                <ul>
-                    <li> <a href="#">Інформація</a></li>
-                    <li><a href="#">Новини</a></li>
-                    <li><a href="price.html">Прайс-лист</a></li>
-                    <li><a href="#">Магазин</a></li>
-                    <li><a href="#">Контакти</a></li>
-                </ul>
-            </nav>
-            <div class="user-block">
-                <a href="#">Вхід</a>
-            </div>
-        </div>
+        <nav class="main-navigation">
+                <div class="container">
+                    <div class="main-header-logo">
+                        <a href="./index.html">
+                                    <img src="../SS-academy-barber/img/Logo.svg" alt="Логотип">
+                        </a>
+                    </div> 
+                    <ul class="site-navigation">
+                        <li><a href="#">Інформація</a></li>
+                        <li><a href="#">Новини</a></li>
+                        <li><a href="./price.html">Прайс-лист</a></li>
+                        <li><a href="./shop.html">Магазин</a></li>
+                        <li><a href="#">Контакти</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li>
+                            <a class="login-link" href="#">Вхід</a> 
+                        </li>
+                    </ul>
+                </div>
+        </nav>
     </header>
+   
     <main class="container">
         <div class="main-title">
-        <div class="title">
-            <h1 class="title-name">Засоби для догляду</h1>
+                <h1 class="title-name">Засоби для догляду</h1>
+                <div class="breadcrumbs">
+                        <a class="breadcrumbs-link" href="./index.html">
+                        Головна
+                        </a>
+                        <a class="breadcrumbs-link" href="./shop.html">
+                        Магазин
+                        </a>
+                        <a class="breadcrumbs-link">
+                        Засоби для догляду
+                        </a>
+                </div>
         </div>
-        <div class="navigation">
-            <ul>
-                <li><a href="#">Головна</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Засоби для догляду</a></li>
-            </ul>
-        </div>
-        </div>
-    <div class="both-side">    
+
+    <div class="both-side">
+
         <div class="content-left">
             <div class="developers-items">
-                <form action="GET">
+                <form class="filter-form" action="GET">
                     <h2 class="developers-title">Виробники:</h2>
                     <ul class="developers-names">
-                        <li><input type="checkbox" name="Baxter of California" id="Baxter of California"><label for="Baxter of California">Baxter of California</label></li>
-                        <li><input type="checkbox" name="Mr Natty" id="Mr Natty"><label for="Mr Natty">Mr Natty</label></li>
-                        <li><input type="checkbox" name="Suavecito" id="Suavecito"><label for="Suavecito">Suavecito</label></li>
-                        <li><input type="checkbox" name="Malin+Goetz" id="Malin+Goetz"><label for="Malin+Goetz">Malin+Goetz</label></li>
-                        <li><input type="checkbox" name="Murray's" id="Murray's"><label for="Murray's">Murray's</label></li>
-                        <li> <input type="checkbox" name="American crew" id="American crew"><label for="American crew">American crew</label></li>
+                        <li>
+                            <input class="visually-hidden" type="checkbox" name="check-brand" id="check-1" checked>
+                            <label class="filter-checkbox" for="check-1">
+                                <svg class="filter-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="12px" height="12px">
+                            <image  x="0px" y="0px" width="12px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflARACNRRcS5wbAAAAP0lEQVQY04WOSQ4AMAgCB///Z3voJmlMOcmoqEhAuBJiF47n7MSqGKmaWvkcd1eefEnQ6BPVHG/edXxa8eDlBjevEQ5A9ZHaAAAAAElFTkSuQmCC" />
+                            </svg>
+
+                                <p>Baxter of California</p>
+
+                            </label>
+                            
+                        </li>
+                        <li>
+                            <input class="visually-hidden" type="checkbox" name="check-brand" id="check-2">
+                            <label class="filter-checkbox" for="check-2">
+                                <svg class="filter-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="12px" height="12px">
+                            <image  x="0px" y="0px" width="12px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflARACNRRcS5wbAAAAP0lEQVQY04WOSQ4AMAgCB///Z3voJmlMOcmoqEhAuBJiF47n7MSqGKmaWvkcd1eefEnQ6BPVHG/edXxa8eDlBjevEQ5A9ZHaAAAAAElFTkSuQmCC" />
+                            </svg>
+
+                            <p>Mr Natty<p>
+
+                            </label>
+                        </li>
+                        <li>
+                            <input class="visually-hidden" type="checkbox" name="check-brand" id="check-3" checked>
+                            <label class="filter-checkbox" for="check-3">
+                                <svg class="filter-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="12px" height="12px">
+                            <image  x="0px" y="0px" width="12px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflARACNRRcS5wbAAAAP0lEQVQY04WOSQ4AMAgCB///Z3voJmlMOcmoqEhAuBJiF47n7MSqGKmaWvkcd1eefEnQ6BPVHG/edXxa8eDlBjevEQ5A9ZHaAAAAAElFTkSuQmCC" />
+                            </svg>
+
+                            <p>Suavecito</p>
+
+                            </label>
+                        </li>
+                        <li><input class="visually-hidden" type="checkbox" name="check-brand" id="check-4">
+                            <label class="filter-checkbox" for="check-4">
+                                <svg class="filter-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="12px" height="12px">
+                            <image  x="0px" y="0px" width="12px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflARACNRRcS5wbAAAAP0lEQVQY04WOSQ4AMAgCB///Z3voJmlMOcmoqEhAuBJiF47n7MSqGKmaWvkcd1eefEnQ6BPVHG/edXxa8eDlBjevEQ5A9ZHaAAAAAElFTkSuQmCC" />
+                            </svg>
+
+                            <p>Malin+Goetz</p>
+
+                            </label>
+                        </li>
+                        <li>
+                            <input class="visually-hidden" type="checkbox" name="check-brand" id="check-5">
+                            <label class="filter-checkbox" for="check-5">
+                                <svg class="filter-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="12px" height="12px">
+                            <image  x="0px" y="0px" width="12px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflARACNRRcS5wbAAAAP0lEQVQY04WOSQ4AMAgCB///Z3voJmlMOcmoqEhAuBJiF47n7MSqGKmaWvkcd1eefEnQ6BPVHG/edXxa8eDlBjevEQ5A9ZHaAAAAAElFTkSuQmCC" />
+                            </svg>
+
+                            <p>Murray's</p>
+
+                            </label>
+                        </li>
+                        <li> 
+                            <input class="visually-hidden" type="checkbox" name="check-brand" id="check-6" checked>
+                            <label class="filter-checkbox" for="check-6">
+                                <svg class="filter-icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            width="12px" height="12px">
+                            <image  x="0px" y="0px" width="12px" height="12px"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQflARACNRRcS5wbAAAAP0lEQVQY04WOSQ4AMAgCB///Z3voJmlMOcmoqEhAuBJiF47n7MSqGKmaWvkcd1eefEnQ6BPVHG/edXxa8eDlBjevEQ5A9ZHaAAAAAElFTkSuQmCC" />
+                            </svg>
+
+
+                            <p>American crew</p>
+
+                            </label>
+                        </li>
                     </ul>
                 </form>
             </div>
+
             <div class="group-items">
+                <form class="filter-form" action="GET">
                 <h2 class="items-group-title">Групи товарів</h2>
-                    <ul>
-                        <li><input type="radio" name="Приладдя для гоління" id="Приладдя для гоління"><label for="Приладдя для гоління">Приладдя для гоління</label></li>
-                        <li><input type="radio" name="Засоби для догляду" id="Засоби для догляду"><label for="Засоби для догляду">Засоби для догляду</label></li>
-                        <li><input type="radio" name="Аксесуари" id="Аксесуари"><label for="Аксесуари">Аксесуари</label></li>
+                    <ul class="group-names">
+                        <li>
+                            <input class="visually-hidden" type="radio" name="radio-check" id="radio-1">
+                            <label class="filter-radio" for="radio-1">
+                                <p>Приладдя для гоління</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input class="visually-hidden" type="radio" name="radio-check" id="radio-2">
+                            <label class="filter-radio" for="radio-2">
+                                <p>Засоби для догляду</p>
+                            </label>
+                        </li>
+                        <li>
+                            <input class="visually-hidden" type="radio" name="radio-check" id="radio-3">
+                            <label class="filter-radio" for="radio-3">
+                                <p>Аксесуари</p>
+                            </label>
+                        </li>
                     </ul>
+                </form>
             </div>
-            <button class="btn-shop" type="submit">Показати</button>
+            <button class="button button-show" type="submit">Показати</button>
         </div>
+
         <div class="content-right">
-            <div class="product-items">
-                <div class="product-1">
-                    <div class="product-image">
-                        <img src="../SS-academy-barber/img/Layer 38.png"  alt="">
-                    </div>
-                    <div class="product-travel">
-                        <span class="product-name">
-                            <h2>
-                                <a href="shop-item.html">
-                                    Набір для подорожей<br>
+                <div class="product-card">
+                        <h2 class="product-card-title">
+                            <a class="product-card-link" href="shop-item.html">
+                                    Набір для подорожей
+                                <p class="product-card-name">
                                     «Baxter of California»
-                                </a>
-                            </h2> 
+                                </p>
+                            </a>
+                        </h2>     
+                    <img class="product-card-image" src="../SS-academy-barber/img/Layer 38.png"  alt="">
+                    <p class="product-card-price">
+                        <span>
+                            1099 грн
                         </span>
-                    </div>
-                    <div class="price">
-                        <span>1099 грн</span>
-                        <a class="btn-price" href="#">Купити</a>
-                    </div>
-                </div>
-                <div class="product-2">  
-                    <div class="product-image">
-                        <img src="../SS-academy-barber/img/Layer 30.png" alt="">
-                    </div>
-                    <div class="product">
-                        <span class="product-name">
-                            <h2>
-                                <a href="shop-item.html">
-                                    Зволожуючий кондиціонер<br>
+                        <a class="button button-price" href="#">Купити</a>
+                    </p>
+                </div>   
+                <div class="product-card">
+                        <h2 class="product-card-title">
+                            <a class="product-card-link" href="shop-item.html">
+                                    Зволожуючий кондиціонер
+                                <p class="product-card-name">
                                     «Baxter of California»
-                                </a>
-                            </h2>
+                                </p> 
+                            </a>
+                        </h2>
+                    <img class="product-card-image" src="../SS-academy-barber/img/Layer 30.png" alt="">
+                    <p class="product-card-price">
+                        <span>
+                            284 грн
                         </span>
-                    </div>
-                    <div class="price">
-                        <span>284 грн</span>
-                        <a class="btn-price" href="#">Купити</a>
-                    </div>
+                        <a class="button button-price" href="#">Купити</a>
+                    </p>   
                 </div>
-                <div class="product-3">
-                    <div class="product-image">
-                        <img src="../SS-academy-barber/img/Layer 39.png" alt="">
-                    </div>
-                    <div class="product">
-                        <span class="product-name"><h2><a href="shop-item.html">
-                            Гель для волосся<br>
-                            «Suavecito»
-                        </a></h2></span>
-                    </div>
-                    <div class="price">
-                        <span>110 грн</span>
-                        <a class="btn-price" href="#">Купити</a>
-                    </div>
+                <div class="product-card">
+                        <h2 class="product-card-title">
+                            <a class="product-card-link" href="shop-item.html">
+                                    Гель для волосся
+                                <p class="product-card-name">
+                                    «Suavecito»
+                                </p>
+                            </a>
+                        </h2>
+                    <img class="product-card-image" src="../SS-academy-barber/img/Layer 39.png" alt="">
+                    <p class="product-card-price">
+                        <span>
+                            110 грн
+                        </span>
+                        <a class="button button-price" href="#">Купити</a>
+                    </p>
+                </div>        
+                <div class="product-card">
+                        <h2 class="product-card-title">
+                            <a class="product-card-link" href="shop-item.html">
+                                    Глина для укладки волосся
+                                <p class="product-card-name">
+                                    «American Crew»
+                                </p>
+                            </a>   
+                        </h2>
+                    <img class="product-card-image" src="../SS-academy-barber/img/Layer 32.png" alt="">
+                    <p class="product-card-price">
+                        <span>
+                            190 грн
+                        </span>
+                        <a class="button button-price" href="#">Купити</a>
+                    </p>
+                </div>    
+                <div class="product-card">
+                        <h2 class="product-card-title">
+                            <a class="product-card-link" href="shop-item.html">
+                                    Гель для волосся
+                                <p class="product-card-name">
+                                    «American Crew»   
+                                </p>
+                            </a>
+                        </h2>
+                    <img class="product-card-image" src="../SS-academy-barber/img/Layer 33.png" alt="">
+                    <p class="product-card-price">
+                        <span> 
+                            114 грн
+                        </span>
+                        <a class="button button-price" href="#">Купити</a>
+                    </p>
                 </div>
-                <div class="product-4">
-                    <div class="product-image">
-                        <img src="../SS-academy-barber/img/Layer 32.png" alt="">
-                    </div>
-                    <div class="product">
-                        <span class="product-name"><h2><a href="shop-item.html">
-                            Глина для укладки волосся<br>
-                            «American Crew»
-                        </a></h2></span>
-                    </div>
-                    <div class="price">
-                        <span>190 грн</span>
-                        <a class="btn-price" href="#">Купити</a>
-                    </div>
-                </div>
-                <div class="product-5">
-                    <div class="product">
-                        <img src="../SS-academy-barber/img/Layer 33.png" alt="">
-                    </div>
-                    <div class="product">
-                        <span class="product-name"><h2><a href="shop-item.html">
-                            Гель для волосся<br>
-                            «American Crew»
-                        </a></h2></span>
-                    </div>
-                    <div class="price">
-                        <span>114 грн</span>
-                        <a class="btn-price" href="#">Купити</a>
-                    </div>
-                </div>
-                <div class="product-6">
-                    <div class="product">
-                        <img src="../SS-academy-barber/img/Layer 42.png" alt="">
-                    </div>
-                    <div class="product">
-                        <span class="product-name"><h2><a href="shop-item.html">
-                            Набір для гоління<br>
-                            «Baxter of California»
-                        </a></h2></span>
-                    </div>
-                    <div class="price">
-                        <span>1477 грн</span>
-                        <a class="btn-price" href="#">Купити</a>
-                    </div>
-                </div>
+                <div class="product-card">
+                        <h2 class="product-card-title">
+                            <a class="product-card-link" href="shop-item.html">
+                                    Набір для гоління
+                                <p class="product-card-name">
+                                    «Baxter of California»
+                                </p>
+                            </a>
+                        </h2>
+                    <img class="product-card-image" src="../SS-academy-barber/img/Layer 42.png" alt="">
+                    <p class="product-card-price">
+                        <span>
+                            1477 грн
+                        </span>
+                        <a class="button button-price" href="#">Купити</a>
+                    </p>
+                </div>        
+
+            <div class="pagination">
+                <a class="pagination-page" href="#">1</a>
+                <a class="pagination-page pagination-page-active" href="#">2</a>
+                <a class="pagination-page" href="#">3</a>
+                <a class="pagination-page" href="#">4</a>
             </div>
-            <div class="page-numbers">
-                <a class="btn-1" href="#">1</a>
-                <a class="btn-2" href="#">2</a>
-                <a class="btn-3" href="#">3</a>
-                <a class="btn-4" href="#">4</a>
-            </div>
         </div>
-    </div>  
-    </main>
-    <footer class="main-footer-layout container">
-        <div class="contact">
-            <p>
-                Барбершоп<br>
-                Адреса: м. Львів, Площа Галицька, 19<br>
-                <a href="#">Як нас відшукати</a><br>
-                Телефон: +3806723223
-            </p>
-        </div>
-        <div class="social-media">
-            <p>Дружити:</p>
-            <a class="btn-social-media btn-social-media-vk" href="#">Вконтакті</a>
-            <a class="btn-social-media btn-social-media-fb" href="#">Фейсбук</a>
-            <a class="btn-social-media btn-social-media-insta" href="#">Інстаграм</a>
-        </div>
-        <div class="developers">
-            <p>Розроблено:</p>
-            <a class="btn" href="#">SS Academy</a>
-        </div>
+    </div>
+ </main>
+
+    <footer class="main-footer">
+        <div class="container"> 
+                <p class="footer-contacts">
+                    Барбершоп<br>
+                    Адреса: м. Львів, Площа Галицька, 19<br>
+                    <a href="#">Як нас відшукати</a><br>
+                    Телефон: +380672322321
+                </p>
+                <div class="footer-social">
+                    <b>Дружити:</b>
+                    <ul>
+                        <li><a class="social-button" href="#" aria-label="Фейсбук">
+                            <svg class="social-icon" width="21px" height="21px" id="facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 10.15 21.74" width="100%" height="100%"><path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"></path></svg>  
+                        </a>
+                        </li>
+                        <li><a class="social-button" href="#" aria-label="Інстаграм">
+                            <svg class="social-icon" viewBox="0 0 20 20" width="21px" height="21px" id="instagram"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z"></path></svg>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <p class="footer-copyright">
+                    <b>Розроблено:</b>
+                    <a class="button" href="#">SS Academy</a>
+                </p>
+
     </footer>
 </body>
 </html>
